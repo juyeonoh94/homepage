@@ -1,34 +1,119 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>아인에듀자산컨설팅 주식회사</title>
+  <meta name="description" content="아인에듀자산컨설팅 주식회사 공식 홈페이지입니다." />
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: 'Arial', sans-serif;
+      font-family: "Noto Sans KR", "Malgun Gothic", Arial, sans-serif;
+      background: #f7f8fa;
+      color: #111827;
+    }
+
+    .wrap {
+      min-height: 100vh;
       display: flex;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
-      background-color: #ffffff;
+      justify-content: center;
+      padding: 24px;
     }
-    .box {
+
+    .card {
+      width: 100%;
+      max-width: 760px;
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 56px 32px;
       text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     }
+
+    .label {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #1d4ed8;
+      background: #eff6ff;
+      border-radius: 999px;
+    }
+
     h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
+      margin: 0 0 16px;
+      font-size: 34px;
+      line-height: 1.35;
+      font-weight: 700;
+      word-break: keep-all;
     }
+
     p {
-      color: #666;
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.8;
+      color: #4b5563;
+      word-break: keep-all;
+    }
+
+    .contact {
+      margin-top: 28px;
+      font-size: 15px;
+      color: #6b7280;
+    }
+
+    .contact a {
+      color: #111827;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .footer {
+      margin-top: 36px;
+      font-size: 13px;
+      color: #9ca3af;
+    }
+
+    @media (max-width: 640px) {
+      .card {
+        padding: 40px 24px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      p {
+        font-size: 15px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="box">
-    <h1>아인에듀자산컨설팅 주식회사</h1>
-    <p>공식 홈페이지 준비 중입니다.</p>
+  <div class="wrap">
+    <main class="card">
+      <div class="label">Official Website</div>
+      <h1>아인에듀자산컨설팅 주식회사</h1>
+      <p>
+        당사 홈페이지를 방문해 주셔서 감사합니다.<br />
+        현재 공식 홈페이지를 준비 중이며, 보다 나은 서비스로 곧 찾아뵙겠습니다.
+      </p>
+
+      <div class="contact">
+        문의: <a href="mailto:info@yourdomain.co.kr">info@yourdomain.co.kr</a>
+      </div>
+
+      <div class="footer">
+        © AIN EDU ASSET CONSULTING CO., LTD. All Rights Reserved.
+      </div>
+    </main>
   </div>
 </body>
 </html>
